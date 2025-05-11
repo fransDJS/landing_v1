@@ -76,7 +76,8 @@ body {
 
 .reviews-grid,
 .episodes-list {
-  width: 1200px; /* 384px * 3 */
+  width: 100%; /* 384px * 3 */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
