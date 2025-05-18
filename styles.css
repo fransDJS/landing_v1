@@ -5,8 +5,10 @@ body {
   font-family: 'DM Sans', Arial, sans-serif;
 }
 
+
+
 .main-sections {
-  max-width: 1300px; /* или ширина верхнего блока */
+  max-width: 1300px; 
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
@@ -19,14 +21,12 @@ body {
   align-items: flex-end;
   flex-direction: column;
   gap: 24px;
-  display: grid;
   justify-content: center;
 }
 
 .episodes {
   margin-bottom: 60px; 
 }
-
 
 .episodes-list {
   max-width: 1300px;
@@ -61,23 +61,22 @@ body {
 }
 
 h3 {
-font-family: DM Sans;
-font-weight: 400;
-font-size: 64px;
-line-height: 70.4px;
-letter-spacing: 2.56px;
-color: #FFFFFF;
-margin: unset;
-
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70.4px;
+  letter-spacing: 2.56px;
+  color: #FFFFFF;
+  margin: unset;
 }
 
 p {
-font-family: DM Sans;
-font-weight: 400;
-font-size: 22px;
-line-height: 33px;
-letter-spacing: 0%;
-color:rgba(255, 255, 255, 0.7)
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0%;
+  color:rgba(255, 255, 255, 0.7)
 }
 
 .episode-button {
@@ -117,7 +116,6 @@ color: #FFFFFF;
   padding: 2rem;
 }
 
-
 .episode-tag {
   display: flex; 
   justify-content: center; /* по горизонтали */
@@ -134,7 +132,6 @@ color: #FFFFFF;
 .episode-text {
   color: rgba(17, 141, 168, 1);
   size: 17px;
-  
   line-height: 27px;
   letter-spacing: 0%;
 }
@@ -145,6 +142,179 @@ color: #FFFFFF;
   gap: 4px; /* расстояние между текстом и кнопкой */
   margin-top: auto; /* отодвигаем весь блок вниз */
 }
+
+.host-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 100px auto; /* отступ снизу до следующей секции */
+  padding: 60px 0;
+  /* background-color: blue; */
+}
+
+.host-container {
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  gap: 48px;
+  /* background-color: green; */
+}
+
+.host-photo img {
+  width: 650px;
+  height: 743px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.host-info {
+  color: #fff;
+  max-width: 600px;
+  align-items: center;
+  position: relative;
+}
+
+.host-btn {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 32px;
+  gap: 18px;
+  align-self: flex-start;
+  border: none;
+  padding: 0;
+}
+
+.host-btn-circle svg {
+  width: 112px;
+  height: 112px;
+  display: block;
+}
+
+.host-btn-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 112px;
+  
+}
+
+.host-btn-text {
+  color: rgba(17, 141, 168, 1);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 0;
+  width: 126px;
+  height: 27px;
+}
+
+.host-info h3 {
+  margin: 0 0 24px 0;
+  font-size: 65px;
+  font-weight: 400;
+  letter-spacing: 2.88px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.host-info p {
+  font-size: 22px;
+  line-height: 33px;
+  margin: 0;
+  margin-bottom: 33px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.host-info p:last-child {
+  margin-bottom: 0;
+}
+
+.subscribe-section {
+  background: rgba(0, 0, 0, 1); 
+  border: 2px solid;
+  border-radius: 32px;
+  width: 100%;
+  max-width: 1300px;
+  height: 387px;
+  margin: 0 auto 76px auto;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-content {
+  width: 642px;
+  max-width: 100%;  
+}
+
+.subscribe-form {
+  width: 522px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subscribe-form h3 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 72px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px;
+  background: rgba(25, 25, 25, 1);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  height: 82px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  border: 2px solid #2ec4f1;
+  border-radius: 8px;
+}
+
+.subscribe-form input::placeholder {
+  color: #888;
+}
+
+.subscribe-form button {
+  padding: 12px 28px;
+  background: rgba(17, 141, 168, 1);
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.subscribe-form button:hover {
+  background: #22b8cf;
+}
+
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* или сколько нужно */
@@ -156,7 +326,6 @@ color: #FFFFFF;
   
 .review {
   /* width: 423px; */
-  
   background: #000000;
   border-radius: 32px;
   padding: 40px 32px 32px 32px;
@@ -196,11 +365,94 @@ color: #FFFFFF;
   margin-top: 0;
 }
 
+.footer {
+  width: 100%;
+  max-width: 1300px;
+  margin: 50px auto 0 auto;
+  padding: 60px 40px 40px 40px;
+  border-radius: 32px 32px 0 0;
+  display: flex;
+  gap: 16px;
+  color: #fff;
+ }
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 0 0 447px;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 64px;
+  justify-content: flex-start;
+  
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__logo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.footer__socials a {
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.footer__socials a:last-child {
+  margin-right: 0;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+
+
+.footer__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+  width: 179px;
+}
+
+.footer__nav li {
+  margin-bottom: 15px;
+}
+
+.footer__nav a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
+  transition: color 0.2s;
+}
+
+.footer__platforms {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
 
 
 @media (max-width: 1300px) {
-  .reviews-grid, .episodes-list {
-      grid-template-columns: repeat(2, 1fr);
+  .reviews-grid {
+       grid-template-columns: repeat(2, 1fr); 
   }
 }
 
